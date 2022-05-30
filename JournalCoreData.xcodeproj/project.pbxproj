@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		2426590B2845505500C2F5B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2426590A2845505500C2F5B1 /* AppDelegate.swift */; };
 		2426590D2845505500C2F5B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2426590C2845505500C2F5B1 /* SceneDelegate.swift */; };
-		2426590F2845505500C2F5B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2426590E2845505500C2F5B1 /* ViewController.swift */; };
 		242659122845505500C2F5B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 242659102845505500C2F5B1 /* Main.storyboard */; };
 		242659152845505500C2F5B1 /* JournalCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 242659132845505500C2F5B1 /* JournalCoreData.xcdatamodeld */; };
 		242659172845505A00C2F5B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 242659162845505A00C2F5B1 /* Assets.xcassets */; };
 		2426591A2845505A00C2F5B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 242659182845505A00C2F5B1 /* LaunchScreen.storyboard */; };
+		24265924284550D100C2F5B1 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24265923284550D100C2F5B1 /* CoreDataStack.swift */; };
+		242659262845520400C2F5B1 /* Entry+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242659252845520400C2F5B1 /* Entry+Convenience.swift */; };
+		24265928284552DA00C2F5B1 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24265927284552DA00C2F5B1 /* EntryController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		242659072845505500C2F5B1 /* JournalCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JournalCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2426590A2845505500C2F5B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2426590C2845505500C2F5B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2426590E2845505500C2F5B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		242659112845505500C2F5B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		242659142845505500C2F5B1 /* JournalCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JournalCoreData.xcdatamodel; sourceTree = "<group>"; };
 		242659162845505A00C2F5B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		242659192845505A00C2F5B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2426591B2845505A00C2F5B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24265923284550D100C2F5B1 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		242659252845520400C2F5B1 /* Entry+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+Convenience.swift"; sourceTree = "<group>"; };
+		24265927284552DA00C2F5B1 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,42 @@
 		242659092845505500C2F5B1 /* JournalCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				242659212845507400C2F5B1 /* Resources */,
+				24265922284550C300C2F5B1 /* CoreData */,
+				24265929284552DE00C2F5B1 /* ModelControllers */,
+			);
+			path = JournalCoreData;
+			sourceTree = "<group>";
+		};
+		242659212845507400C2F5B1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				2426590A2845505500C2F5B1 /* AppDelegate.swift */,
 				2426590C2845505500C2F5B1 /* SceneDelegate.swift */,
-				2426590E2845505500C2F5B1 /* ViewController.swift */,
 				242659102845505500C2F5B1 /* Main.storyboard */,
 				242659162845505A00C2F5B1 /* Assets.xcassets */,
 				242659182845505A00C2F5B1 /* LaunchScreen.storyboard */,
 				2426591B2845505A00C2F5B1 /* Info.plist */,
-				242659132845505500C2F5B1 /* JournalCoreData.xcdatamodeld */,
 			);
-			path = JournalCoreData;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		24265922284550C300C2F5B1 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				242659132845505500C2F5B1 /* JournalCoreData.xcdatamodeld */,
+				24265923284550D100C2F5B1 /* CoreDataStack.swift */,
+				242659252845520400C2F5B1 /* Entry+Convenience.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		24265929284552DE00C2F5B1 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				24265927284552DA00C2F5B1 /* EntryController.swift */,
+			);
+			path = ModelControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2426590F2845505500C2F5B1 /* ViewController.swift in Sources */,
+				24265928284552DA00C2F5B1 /* EntryController.swift in Sources */,
 				2426590B2845505500C2F5B1 /* AppDelegate.swift in Sources */,
 				242659152845505500C2F5B1 /* JournalCoreData.xcdatamodeld in Sources */,
 				2426590D2845505500C2F5B1 /* SceneDelegate.swift in Sources */,
+				24265924284550D100C2F5B1 /* CoreDataStack.swift in Sources */,
+				242659262845520400C2F5B1 /* Entry+Convenience.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +325,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X39HH6F75Z;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = JournalCoreData/Info.plist;
+				INFOPLIST_FILE = JournalCoreData/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,7 +353,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X39HH6F75Z;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = JournalCoreData/Info.plist;
+				INFOPLIST_FILE = JournalCoreData/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
