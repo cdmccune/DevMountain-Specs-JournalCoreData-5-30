@@ -16,6 +16,9 @@
 		24265924284550D100C2F5B1 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24265923284550D100C2F5B1 /* CoreDataStack.swift */; };
 		242659262845520400C2F5B1 /* Entry+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242659252845520400C2F5B1 /* Entry+Convenience.swift */; };
 		24265928284552DA00C2F5B1 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24265927284552DA00C2F5B1 /* EntryController.swift */; };
+		244861402846D65B00E788ED /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2448613F2846D65B00E788ED /* EntryListTableViewController.swift */; };
+		244861432846D85300E788ED /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244861422846D85300E788ED /* DateFormatter.swift */; };
+		244861452846DAFC00E788ED /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244861442846DAFC00E788ED /* EntryDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		24265923284550D100C2F5B1 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		242659252845520400C2F5B1 /* Entry+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+Convenience.swift"; sourceTree = "<group>"; };
 		24265927284552DA00C2F5B1 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		2448613F2846D65B00E788ED /* EntryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
+		244861422846D85300E788ED /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		244861442846DAFC00E788ED /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 		242659092845505500C2F5B1 /* JournalCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				244861412846D66300E788ED /* ViewControllers */,
 				242659212845507400C2F5B1 /* Resources */,
 				24265922284550C300C2F5B1 /* CoreData */,
 				24265929284552DE00C2F5B1 /* ModelControllers */,
@@ -78,6 +85,7 @@
 				242659162845505A00C2F5B1 /* Assets.xcassets */,
 				242659182845505A00C2F5B1 /* LaunchScreen.storyboard */,
 				2426591B2845505A00C2F5B1 /* Info.plist */,
+				244861422846D85300E788ED /* DateFormatter.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -98,6 +106,15 @@
 				24265927284552DA00C2F5B1 /* EntryController.swift */,
 			);
 			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		244861412846D66300E788ED /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2448613F2846D65B00E788ED /* EntryListTableViewController.swift */,
+				244861442846DAFC00E788ED /* EntryDetailViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,11 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				244861432846D85300E788ED /* DateFormatter.swift in Sources */,
 				24265928284552DA00C2F5B1 /* EntryController.swift in Sources */,
 				2426590B2845505500C2F5B1 /* AppDelegate.swift in Sources */,
 				242659152845505500C2F5B1 /* JournalCoreData.xcdatamodeld in Sources */,
+				244861402846D65B00E788ED /* EntryListTableViewController.swift in Sources */,
 				2426590D2845505500C2F5B1 /* SceneDelegate.swift in Sources */,
 				24265924284550D100C2F5B1 /* CoreDataStack.swift in Sources */,
+				244861452846DAFC00E788ED /* EntryDetailViewController.swift in Sources */,
 				242659262845520400C2F5B1 /* Entry+Convenience.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
